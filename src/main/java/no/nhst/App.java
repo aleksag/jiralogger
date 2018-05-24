@@ -76,7 +76,7 @@ public class App {
 
     private static String getJirakey(String activity) {
         String key = activity.split(" ")[0];
-        if (key.startsWith("GLOBAL") || key.startsWith("NG") || key.startsWith("NCP") || key.startsWith("NHSTADM")) {
+        if (key.startsWith("GLOBAL") || key.startsWith("NG") || key.startsWith("NCP") || key.startsWith("NHSTADM") || key.startsWith("LAN") || key.startsWith("GDPR")) {
             return key;
         }
         throw new RuntimeException("Cannot parse file, missing jirakey" + key);
